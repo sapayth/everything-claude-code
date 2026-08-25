@@ -1,4 +1,9 @@
 # Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
 .env.*.local
 
 # API keys and secrets
@@ -93,4 +98,3 @@ ecc2/target/
 .opencode/package-lock.json
 .opencode/node_modules/
 assets/images/security/badrudi-exploit.mp4
-config.bat
