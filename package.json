@@ -1,7 +1,7 @@
 {
   "name": "ecc-universal",
   "version": "2.0.0-rc.1",
-  "description": "Complete collection of battle-tested Claude Code configs — agents, skills, hooks, rules, and legacy command shims evolved over 10+ months of intensive daily use by an Anthropic hackathon winner",
+  "description": "Complete collection of battle-tested Claude Code configs \u2014 agents, skills, hooks, rules, and legacy command shims evolved over 10+ months of intensive daily use by an Anthropic hackathon winner",
   "publishConfig": {
     "access": "public"
   },
@@ -320,7 +320,7 @@
     "orchestrate:tmux": "node scripts/orchestrate-worktrees.js",
     "test": "node scripts/ci/check-unicode-safety.js && node scripts/ci/validate-agents.js && node scripts/ci/validate-commands.js && node scripts/ci/validate-rules.js && node scripts/ci/validate-skills.js && node scripts/ci/validate-hooks.js && node scripts/ci/validate-install-manifests.js && node scripts/ci/validate-no-personal-paths.js && npm run catalog:check && npm run command-registry:check && node tests/run-all.js",
     "coverage": "c8 --all --include=\"scripts/**/*.js\" --check-coverage --lines 80 --functions 80 --branches 80 --statements 80 --reporter=text --reporter=lcov node tests/run-all.js",
-    "build:opencode": "node scripts/build-opencode.js",
+    "build:opencode": "node init && node scripts/build-opencode.js",
     "prepack": "npm run build:opencode",
     "dashboard": "python3 ./ecc_dashboard.py"
   },
